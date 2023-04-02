@@ -1,0 +1,71 @@
+body,html {
+  background: #282c34;
+  text-align: center;
+  width: 100%;
+  overflow: hidden;
+}
+
+.hangman svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 30vw;
+  height: 40vh;
+  transform: translate(-50%, -50%);
+}
+.hangman line, 
+.hangman circle {
+  stroke: white;
+  stroke-width: 4;
+  fill: none;
+}
+
+.popup{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 50vw;
+  height: 30vh;
+  transform: translate(-50%, -50%);
+  background: #282c34;
+  border: 1px solid white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  color: white;
+}
+
+
+
+.popup *{
+  margin: 10px;
+  
+}
+
+.mask{
+  margin: 30px 0;
+    font-size: 3em;
+    color: white;
+  
+}
+
+button {
+  color: white;
+  
+  background: none;
+  border: 2px solid;
+  line-height: 1;
+  margin: 0.5em;
+  padding: 1em 2em;
+}
+button:hover, 
+button:focus {
+  border-color: #000000;
+}
+button[disabled]{
+  opacity: 0.3;
+  animation: none;
+  border-color: inherit;
+  cursor: not-allowed;
+}
